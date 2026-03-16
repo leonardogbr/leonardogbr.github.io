@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Leonardo Gabriel — Staff Software Engineer. Desenvolvendo software que escala e entrega valor. Portfolio and projects.">
+  <title>Leonardo Gabriel — Staff Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header" role="banner">
+    <a href="#hero" class="header__logo">LG</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#about" class="nav__link" data-i18n="nav.about">Sobre</a>
+      <a href="#projects" class="nav__link" data-i18n="nav.projects">Projetos</a>
+      <a href="#skills" class="nav__link" data-i18n="nav.skills">Skills</a>
+      <a href="#contact" class="nav__link" data-i18n="nav.contact">Contato</a>
+      <div class="header__lang">
+        <button type="button" class="lang-btn lang-btn--active" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="theme-toggle" aria-label="Toggle theme">
+        <span class="theme-toggle__icon theme-toggle__icon--light" aria-hidden="true">☀️</span>
+        <span class="theme-toggle__icon theme-toggle__icon--dark" aria-hidden="true">🌙</span>
+      </button>
+    </nav>
+    <button type="button" class="menu-btn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <p class="hero__label" data-i18n="hero.label">Staff Software Engineer</p>
+        <h1 id="hero-title" class="hero__title">Leonardo Gabriel</h1>
+        <p class="hero__tagline" data-i18n="hero.tagline">Desenvolvendo software que escala e entrega valor.</p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary" data-i18n="hero.ctaProjects">Ver projetos</a>
+          <a href="#contact" class="btn btn--secondary" data-i18n="hero.ctaContact">Contato</a>
+        </div>
+      </div>
+      <div class="hero__avatar" aria-hidden="true">
+        <span class="hero__initials">LG</span>
+      </div>
+    </section>
+
+    <section id="about" class="about" aria-labelledby="about-title">
+      <div class="about__inner">
+        <h2 id="about-title" class="section-title" data-i18n="about.title">Sobre mim</h2>
+        <div class="about__content">
+          <div class="about__avatar">
+            <span class="about__initials">LG</span>
+          </div>
+          <div class="about__text">
+            <p class="about__p" data-i18n="about.p1"></p>
+            <p class="about__p" data-i18n="about.p2"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects" aria-labelledby="projects-title">
+      <div class="projects__inner">
+        <h2 id="projects-title" class="section-title" data-i18n="projects.title">Projetos</h2>
+        <div class="projects__grid" id="projects-grid">
+          <!-- Filled by JS from i18n -->
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills" aria-labelledby="skills-title">
+      <div class="skills__inner">
+        <h2 id="skills-title" class="section-title" data-i18n="skills.title">Skills</h2>
+        <div class="skills__list" id="skills-list">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="contact__inner">
+        <h2 id="contact-title" class="section-title" data-i18n="contact.title">Contato</h2>
+        <p class="contact__intro" data-i18n="contact.intro">Veja minha trajetória no LinkedIn ou entre em contato:</p>
+        <div class="contact__links">
+          <a href="mailto:velhorg@hotmail.com" class="contact__link" aria-label="Email">
+            <span class="contact__icon" aria-hidden="true">✉</span>
+            <span>velhorg@hotmail.com</span>
+          </a>
+          <a href="https://github.com/leonardogbr" target="_blank" rel="noopener noreferrer" class="contact__link" aria-label="GitHub">
+            <span class="contact__icon" aria-hidden="true">⌘</span>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/lrgabriel/" target="_blank" rel="noopener noreferrer" class="contact__link" aria-label="LinkedIn">
+            <span class="contact__icon" aria-hidden="true">in</span>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copy">© <span id="year"></span> Leonardo Gabriel</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
