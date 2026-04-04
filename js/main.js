@@ -27,6 +27,11 @@
           description: 'Jogo hyper-casual para todos os públicos. Toque para trocar de pista e desviar dos obstáculos. Velocidade crescente, skins, desafios e troféus. Disponível na App Store.',
           techs: 'React Native',
         },
+        zenTicTacToe: {
+          name: 'Zen Tic-Tac-Toe',
+          description: 'Jogo de estratégia minimalista no estilo jogo da velha. App Flutter com persistência local, interface calma e foco na partida.',
+          techs: 'Flutter, Riverpod, Hive, go_router',
+        },
       },
       skills: { title: 'Skills' },
       contact: {
@@ -59,6 +64,11 @@
           description: 'Hyper-casual game for all audiences. Tap to swap lanes and dodge obstacles. Rising speed, skins, challenges, and trophies. Available on the App Store.',
           techs: 'React Native',
         },
+        zenTicTacToe: {
+          name: 'Zen Tic-Tac-Toe',
+          description: 'Minimalist tic-tac-toe strategy game. Flutter app with local persistence, a calm UI, and focus on the match.',
+          techs: 'Flutter, Riverpod, Hive, go_router',
+        },
       },
       skills: { title: 'Skills' },
       contact: {
@@ -89,6 +99,16 @@
       image: 'assets/onetapdodge-banner.png',
       imageAlt: 'One Tap Dodge',
       imagePosition: 'left',
+    },
+    {
+      id: 'zentictactoe',
+      nameKey: 'projects.zenTicTacToe.name',
+      descKey: 'projects.zenTicTacToe.description',
+      techKey: 'projects.zenTicTacToe.techs',
+      link: 'https://github.com/leonardogbr/tic-tac-toe-app',
+      linkLabel: { pt: 'GitHub', en: 'GitHub' },
+      image: 'assets/zen-tictactoe-banner.png',
+      imageAlt: 'Zen Tic-Tac-Toe',
     },
   ];
 
