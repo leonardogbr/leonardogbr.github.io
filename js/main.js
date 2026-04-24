@@ -96,6 +96,8 @@
       techKey: 'projects.oneTapDodge.techs',
       link: 'https://apps.apple.com/us/app/one-tap-dodge/id6759207009',
       linkLabel: { pt: 'App Store', en: 'App Store' },
+      secondaryLink: 'https://play.google.com/store/apps/details?id=com.onetapdodge',
+      secondaryLinkLabel: { pt: 'Google Play', en: 'Google Play' },
       image: 'assets/onetapdodge-banner.png',
       imageAlt: 'One Tap Dodge',
       imagePosition: 'left',
@@ -156,6 +158,7 @@
       const desc = t(p.descKey);
       const techs = t(p.techKey);
       const label = p.linkLabel[currentLang] || p.linkLabel.en;
+      const secondaryLabel = p.secondaryLinkLabel ? (p.secondaryLinkLabel[currentLang] || p.secondaryLinkLabel.en) : '';
       const cardClass = 'card' + (p.imagePosition ? ' card--align-' + p.imagePosition : '');
       return (
         '<article class="' + cardClass + '">' +
@@ -167,7 +170,10 @@
         '    <h3 class="card__title">' + escapeHtml(name) + '</h3>' +
         '    <p class="card__desc">' + escapeHtml(desc) + '</p>' +
         '    <p class="card__techs">' + escapeHtml(techs) + '</p>' +
-        '    <a href="' + escapeHtml(p.link) + '" target="_blank" rel="noopener noreferrer" class="card__link">' + escapeHtml(label) + ' →</a>' +
+        '    <div class="card__links">' +
+        '      <a href="' + escapeHtml(p.link) + '" target="_blank" rel="noopener noreferrer" class="card__link">' + escapeHtml(label) + ' →</a>' +
+        (p.secondaryLink ? '      <a href="' + escapeHtml(p.secondaryLink) + '" target="_blank" rel="noopener noreferrer" class="card__link">' + escapeHtml(secondaryLabel) + ' →</a>' : '') +
+        '    </div>' +
         '  </div>' +
         '</article>'
       );

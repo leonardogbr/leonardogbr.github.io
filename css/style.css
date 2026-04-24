@@ -336,6 +336,13 @@ section { padding: 4rem 1.5rem; }
 }
 .card__link:hover { text-decoration: none; }
 
+.card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: auto;
+}
+
 /* Skills */
 .skills { background: var(--bg-elevated); }
 .skills__inner { max-width: 800px; margin: 0 auto; }
