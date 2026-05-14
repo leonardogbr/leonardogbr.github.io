@@ -29,7 +29,7 @@
         },
         zenTicTacToe: {
           name: 'Zen Tic-Tac-Toe',
-          description: 'Jogo de estratégia minimalista no estilo jogo da velha. App Flutter com persistência local, interface calma e foco na partida.',
+          description: 'Jogo de estratégia minimalista no estilo jogo da velha. App Flutter com persistência local, interface calma e foco na partida. Disponível na App Store.',
           techs: 'Flutter, Riverpod, Hive, go_router',
         },
       },
@@ -66,7 +66,7 @@
         },
         zenTicTacToe: {
           name: 'Zen Tic-Tac-Toe',
-          description: 'Minimalist tic-tac-toe strategy game. Flutter app with local persistence, a calm UI, and focus on the match.',
+          description: 'Minimalist tic-tac-toe strategy game. Flutter app with local persistence, a calm UI, and focus on the match. Available on the App Store.',
           techs: 'Flutter, Riverpod, Hive, go_router',
         },
       },
@@ -107,8 +107,8 @@
       nameKey: 'projects.zenTicTacToe.name',
       descKey: 'projects.zenTicTacToe.description',
       techKey: 'projects.zenTicTacToe.techs',
-      link: 'https://github.com/leonardogbr/tic-tac-toe-app',
-      linkLabel: { pt: 'GitHub', en: 'GitHub' },
+      link: 'https://apps.apple.com/us/app/zen-tic-tac-toe/id6761655543',
+      linkLabel: { pt: 'App Store', en: 'App Store' },
       image: 'assets/zen-tictactoe-banner.png',
       imageAlt: 'Zen Tic-Tac-Toe',
     },
